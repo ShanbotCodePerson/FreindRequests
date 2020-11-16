@@ -13,10 +13,14 @@
 		40B7D5A92563292400CD3614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B7D5A72563292400CD3614 /* Main.storyboard */; };
 		40B7D5AB2563292700CD3614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B7D5AA2563292700CD3614 /* Assets.xcassets */; };
 		40B7D5AE2563292700CD3614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B7D5AC2563292700CD3614 /* LaunchScreen.storyboard */; };
+		40B7D5B92563299100CD3614 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7D5B82563299100CD3614 /* User.swift */; };
+		40B7D5BD2563299600CD3614 /* FriendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7D5BC2563299600CD3614 /* FriendRequest.swift */; };
+		40B7D5C02563299F00CD3614 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7D5BF2563299F00CD3614 /* UserController.swift */; };
+		40B7D5C3256329A600CD3614 /* FriendRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7D5C2256329A600CD3614 /* FriendRequestController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		40B7D59E2563292400CD3614 /* FreindRequests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreindRequests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B7D59E2563292400CD3614 /* FriendRequests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendRequests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B7D5A12563292400CD3614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40B7D5A32563292400CD3614 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		40B7D5A52563292400CD3614 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		40B7D5AA2563292700CD3614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40B7D5AD2563292700CD3614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40B7D5AF2563292700CD3614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B7D5B82563299100CD3614 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		40B7D5BC2563299600CD3614 /* FriendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequest.swift; sourceTree = "<group>"; };
+		40B7D5BF2563299F00CD3614 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		40B7D5C2256329A600CD3614 /* FriendRequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +56,7 @@
 		40B7D59F2563292400CD3614 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40B7D59E2563292400CD3614 /* FreindRequests.app */,
+				40B7D59E2563292400CD3614 /* FriendRequests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +64,8 @@
 		40B7D5A02563292400CD3614 /* FreindRequests */ = {
 			isa = PBXGroup;
 			children = (
+				40B7D5B72563298800CD3614 /* ModelControllers */,
+				40B7D5B62563298500CD3614 /* Models */,
 				40B7D5A12563292400CD3614 /* AppDelegate.swift */,
 				40B7D5A32563292400CD3614 /* SceneDelegate.swift */,
 				40B7D5A52563292400CD3614 /* ViewController.swift */,
@@ -67,12 +77,30 @@
 			path = FreindRequests;
 			sourceTree = "<group>";
 		};
+		40B7D5B62563298500CD3614 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				40B7D5B82563299100CD3614 /* User.swift */,
+				40B7D5BC2563299600CD3614 /* FriendRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		40B7D5B72563298800CD3614 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				40B7D5BF2563299F00CD3614 /* UserController.swift */,
+				40B7D5C2256329A600CD3614 /* FriendRequestController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		40B7D59D2563292400CD3614 /* FreindRequests */ = {
+		40B7D59D2563292400CD3614 /* FriendRequests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40B7D5B22563292700CD3614 /* Build configuration list for PBXNativeTarget "FreindRequests" */;
+			buildConfigurationList = 40B7D5B22563292700CD3614 /* Build configuration list for PBXNativeTarget "FriendRequests" */;
 			buildPhases = (
 				40B7D59A2563292400CD3614 /* Sources */,
 				40B7D59B2563292400CD3614 /* Frameworks */,
@@ -82,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = FreindRequests;
+			name = FriendRequests;
 			productName = FreindRequests;
-			productReference = 40B7D59E2563292400CD3614 /* FreindRequests.app */;
+			productReference = 40B7D59E2563292400CD3614 /* FriendRequests.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 40B7D5992563292400CD3614 /* Build configuration list for PBXProject "FreindRequests" */;
+			buildConfigurationList = 40B7D5992563292400CD3614 /* Build configuration list for PBXProject "FriendRequests" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40B7D59D2563292400CD3614 /* FreindRequests */,
+				40B7D59D2563292400CD3614 /* FriendRequests */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B7D5C02563299F00CD3614 /* UserController.swift in Sources */,
+				40B7D5B92563299100CD3614 /* User.swift in Sources */,
+				40B7D5BD2563299600CD3614 /* FriendRequest.swift in Sources */,
 				40B7D5A62563292400CD3614 /* ViewController.swift in Sources */,
 				40B7D5A22563292400CD3614 /* AppDelegate.swift in Sources */,
+				40B7D5C3256329A600CD3614 /* FriendRequestController.swift in Sources */,
 				40B7D5A42563292400CD3614 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +324,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shannon.FreindRequests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shannon.FriendRequests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +342,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shannon.FreindRequests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shannon.FriendRequests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		40B7D5992563292400CD3614 /* Build configuration list for PBXProject "FreindRequests" */ = {
+		40B7D5992563292400CD3614 /* Build configuration list for PBXProject "FriendRequests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40B7D5B02563292700CD3614 /* Debug */,
@@ -329,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40B7D5B22563292700CD3614 /* Build configuration list for PBXNativeTarget "FreindRequests" */ = {
+		40B7D5B22563292700CD3614 /* Build configuration list for PBXNativeTarget "FriendRequests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40B7D5B32563292700CD3614 /* Debug */,
